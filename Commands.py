@@ -1,2 +1,8 @@
-//open port 
+#open port Command : 
+  az Vm open-port
+ 
+#open port 80 HTTP : 
 az Vm open-port
+--name myVm
+--resource-group Learn-47dn3r45nke
+--port 80
