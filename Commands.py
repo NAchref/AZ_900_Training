@@ -1,5 +1,5 @@
 #install IIS(Internet Information Services)
-dism online enable-feature featurename:IIS-webServerRole
+dism  \online  \enable-feature  \featurename:IIS-webServerRole
 
 
 #open port Command : 
