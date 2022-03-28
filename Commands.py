@@ -20,3 +20,16 @@ az vm show \
  --show-details \
  --query [publicIps] \
  --output tsv
+
+#Increase your VM’s size to Standard_DS3_v2
+az vm resize \
+ --resource-group Learn-ed49b49c-4d23-418b-89c2-7d6186579226 \
+ --name myVM \
+ --size Standard_DS3_v2
+
+#Verify that your VM is running the new size
+az vm show \
+ --resource-group Learn-ed49b49c-4d23-418b-89c2-7d6186579226 \
+ --name myVM \
+ --query "hardwareProfile" \
+ --output tsv
