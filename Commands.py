@@ -1,6 +1,10 @@
 #Creating Resource Group(to hold all the things thats we need)
 az group create --name --location
 
+#Create a VM1 in resource group RG1 with image Ubuntu
+az vm create --resource-group RG1 --name VM1 --image UbuntuLTS 
+--generate-ssh-keys
+
 #Install IIS(Internet Information Services)
 dism  \online  \enable-feature  \featurename:IIS-webServerRole
 
