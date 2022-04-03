@@ -40,3 +40,6 @@ az vm show \
 
 #Delete a virtual machine named 'MyVm'. 
 az resource delete -g MyResourceGroup -n MyVm --resource-type "Microsoft.Compute/virtualMachines"
+
+#Delete a web app using a resource identifier
+az resource delete --ids /subscriptions/0b1f6471-1bf0-4dda-aec3-111111111111/resourceGroups/MyResourceGroup/providers/Microsoft.Web/sites/MyWebapp
