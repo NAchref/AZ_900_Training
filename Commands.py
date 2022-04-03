@@ -37,3 +37,6 @@ az vm show \
  --name myVM \
  --query "hardwareProfile" \
  --output tsv
+
+#Delete a virtual machine named 'MyVm'. 
+az resource delete -g MyResourceGroup -n MyVm --resource-type "Microsoft.Compute/virtualMachines"
